@@ -345,7 +345,7 @@ async def check_reminders(context: ContextTypes.DEFAULT_TYPE):
 
 def main():
     init_db()
-    app = Application.builder().token(os.getenv("7982719242:AAHoLbDuTFsQUM1MYalywgEHJb3Xt0SmEKg")).build()
+    app = Application.builder().token(os.getenv("TELEGRAM_BOT_TOKEN")).build()
 
     # Conversation pour /timezone
     timezone_conv = ConversationHandler(
